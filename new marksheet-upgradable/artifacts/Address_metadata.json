@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"new marksheet-upgradable/proxy.sol": "Address"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"new marksheet-upgradable/proxy.sol": {
+			"keccak256": "0x3843cff42923a24c358855cf1657433f131c780f564db8ad15f55076ae06438f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d6fc185a79da6f80da8d62d78633d24f31a35e4ccc40dc840494311c12493153",
+				"dweb:/ipfs/QmZTZb4uGfuLikFRMcjNPSWJ3uaLN1EEqN94LDVUM8JAiy"
+			]
+		}
+	},
+	"version": 1
+}

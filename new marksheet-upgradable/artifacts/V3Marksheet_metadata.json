@@ -1,0 +1,207 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "english",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "hindi",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "math",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "science",
+						"type": "uint256"
+					}
+				],
+				"name": "addOrUpdateStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "getStudent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "english",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "hindi",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "math",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "percentage",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "science",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isPass",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct V3Marksheet.Student",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "english",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "hindi",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "math",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "percentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "science",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isPass",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "science",
+						"type": "uint256"
+					}
+				],
+				"name": "updateScienceMarks",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MarksheetV3.sol": "V3Marksheet"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MarksheetV3.sol": {
+			"keccak256": "0x69a50eefd65bc500ee6ab79e02446f4d0ff762b35f94374df4cc6203c81a0eaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0b6abecec13830515d5ed0d944c50d4ed265f143e6917e819956d219cd304a63",
+				"dweb:/ipfs/QmfL2ZFK1vt8aAUMjz2fn2aduqT6ombr2SUZ4HeZ6iJwHD"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,370 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "studentId",
+						"type": "uint256"
+					}
+				],
+				"name": "MarksUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "studentId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "scienceMarks",
+						"type": "uint8"
+					}
+				],
+				"name": "ScienceMarksAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "studentId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "StudentAdded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_scienceMarks",
+						"type": "uint8"
+					}
+				],
+				"name": "addScienceMarks",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_englishMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_hindiMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_mathMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_scienceMarks",
+						"type": "uint8"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentId",
+						"type": "uint256"
+					}
+				],
+				"name": "getStudentDetails",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "englishMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "hindiMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "mathMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "scienceMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "percentage",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getVersion",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "studentCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "englishMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "hindiMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "mathMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "scienceMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "isRegistered",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint8",
+						"name": "percentage",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "hasPassed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_englishMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_hindiMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_mathMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_scienceMarks",
+						"type": "uint8"
+					}
+				],
+				"name": "updateMarks",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Adds Science subject and recalculates percentage out of 400",
+			"kind": "dev",
+			"methods": {
+				"addScienceMarks(uint256,uint8)": {
+					"details": "Add science marks for existing students (for students migrated from V1)",
+					"params": {
+						"_scienceMarks": "Marks in Science",
+						"_studentId": "Student ID"
+					}
+				},
+				"addStudent(uint256,string,uint8,uint8,uint8,uint8)": {
+					"details": "Add a new student with their marks including Science",
+					"params": {
+						"_englishMarks": "Marks in English (out of 100)",
+						"_hindiMarks": "Marks in Hindi (out of 100)",
+						"_id": "Student ID",
+						"_mathMarks": "Marks in Math (out of 100)",
+						"_name": "Student name",
+						"_scienceMarks": "Marks in Science (out of 100)"
+					}
+				},
+				"getVersion()": {
+					"details": "Get version of the contract",
+					"returns": {
+						"_0": "Contract version string"
+					}
+				},
+				"updateMarks(uint256,uint8,uint8,uint8,uint8)": {
+					"details": "Update all marks for an existing student",
+					"params": {
+						"_englishMarks": "New marks in English",
+						"_hindiMarks": "New marks in Hindi",
+						"_mathMarks": "New marks in Math",
+						"_scienceMarks": "New marks in Science",
+						"_studentId": "Student ID"
+					}
+				}
+			},
+			"title": "MarksheetV2",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"new marksheet-upgradable/MarksheetV2.sol": "MarksheetV2"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"new marksheet-upgradable/MarksheetV2.sol": {
+			"keccak256": "0xbb5437d67059b373273456692b2d70df572975ee55dc0425c2646ff986630fcf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://198baab4628c55497d4ff5e238e573a4bb35b65abad6526cc749d8b7d50edbef",
+				"dweb:/ipfs/QmQCSAAu753sxhs8zARNEtVCCguMGZ7H93Yb5hkQSpHirr"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,164 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "english",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "hindi",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "math",
+						"type": "uint256"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "getStudent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "english",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "hindi",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "math",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "percentage",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct V1Marksheet.Student",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "english",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "hindi",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "math",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "percentage",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MarksheetV1.sol": "V1Marksheet"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MarksheetV1.sol": {
+			"keccak256": "0x49f9d6bdd2b981b0258aaf5019dc2b5eb5d18511a06474be2d82eb12da5d34b6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0dfdd7e6aa64639c087706131bf8f273f98ecc507f93360bc724da80743154ec",
+				"dweb:/ipfs/QmcSSmXC2ZJhsm7WNVskg7gG3nTTjYnzGgJKTkB8UkYYW6"
+			]
+		}
+	},
+	"version": 1
+}

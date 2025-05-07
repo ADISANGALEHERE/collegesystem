@@ -1,0 +1,473 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "studentId",
+						"type": "uint256"
+					}
+				],
+				"name": "MarksUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "studentId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "scienceMarks",
+						"type": "uint8"
+					}
+				],
+				"name": "ScienceMarksAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "studentId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "StudentAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "studentId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "hasPassed",
+						"type": "bool"
+					}
+				],
+				"name": "StudentStatusUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "PASS_PERCENTAGE",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_englishMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_hindiMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_mathMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_scienceMarks",
+						"type": "uint8"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPassedStudentsCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentId",
+						"type": "uint256"
+					}
+				],
+				"name": "getStudentDetails",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "englishMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "hindiMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "mathMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "scienceMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "percentage",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "hasPassed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getVersion",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentId",
+						"type": "uint256"
+					}
+				],
+				"name": "hasStudentPassed",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "studentCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "englishMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "hindiMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "mathMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "scienceMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "isRegistered",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint8",
+						"name": "percentage",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "hasPassed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_englishMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_hindiMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_mathMarks",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_scienceMarks",
+						"type": "uint8"
+					}
+				],
+				"name": "updateMarks",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_scienceMarks",
+						"type": "uint8"
+					}
+				],
+				"name": "updateScienceMarks",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentId",
+						"type": "uint256"
+					}
+				],
+				"name": "upgradeStudentRecord",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Adds pass/fail logic and allows updating missing subject data",
+			"kind": "dev",
+			"methods": {
+				"addStudent(uint256,string,uint8,uint8,uint8,uint8)": {
+					"details": "Add a new student with their marks and evaluate pass/fail status",
+					"params": {
+						"_englishMarks": "Marks in English (out of 100)",
+						"_hindiMarks": "Marks in Hindi (out of 100)",
+						"_id": "Student ID",
+						"_mathMarks": "Marks in Math (out of 100)",
+						"_name": "Student name",
+						"_scienceMarks": "Marks in Science (out of 100)"
+					}
+				},
+				"getPassedStudentsCount()": {
+					"details": "Get number of students who passed",
+					"returns": {
+						"_0": "Count of students who passed"
+					}
+				},
+				"getVersion()": {
+					"details": "Get version of the contract",
+					"returns": {
+						"_0": "Contract version string"
+					}
+				},
+				"hasStudentPassed(uint256)": {
+					"details": "Check if student has passed",
+					"params": {
+						"_studentId": "Student ID"
+					},
+					"returns": {
+						"_0": "Student's pass status"
+					}
+				},
+				"updateMarks(uint256,uint8,uint8,uint8,uint8)": {
+					"details": "Update all marks for an existing student",
+					"params": {
+						"_englishMarks": "New marks in English",
+						"_hindiMarks": "New marks in Hindi",
+						"_mathMarks": "New marks in Math",
+						"_scienceMarks": "New marks in Science",
+						"_studentId": "Student ID"
+					}
+				},
+				"updateScienceMarks(uint256,uint8)": {
+					"details": "Add or update science marks for existing students",
+					"params": {
+						"_scienceMarks": "Marks in Science",
+						"_studentId": "Student ID"
+					}
+				},
+				"upgradeStudentRecord(uint256)": {
+					"details": "Update existing student records with missing data from V1/V2 This function can add science marks and update pass/fail status",
+					"params": {
+						"_studentId": "Student ID"
+					}
+				}
+			},
+			"title": "MarksheetV3",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"new marksheet-upgradable/MarksheetV3.sol": "MarksheetV3"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"new marksheet-upgradable/MarksheetV3.sol": {
+			"keccak256": "0xe2dae1988517b9b6d06c24bad1e94b7482edf99ecb899ecda596f445322894c7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dbf16368a939593e51cecefa3a40da3043d8e489a3faeb9a356b394d6b091dd1",
+				"dweb:/ipfs/QmfEZsuVag6RTsQVbYcAGw3tbJf4sponZa3tpsLghkZfZf"
+			]
+		}
+	},
+	"version": 1
+}
